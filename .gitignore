@@ -2,4 +2,5 @@ db.sqlite3
 venv
 __pycache__
 api/__init__.py
-migrations
+api/migrations
+movierater/__init__.py
