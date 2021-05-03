@@ -23,6 +23,10 @@ class MovieViewSet(viewsets.ModelViewSet):
             movie = Movie.objects.get(id=pk)
             stars = request.data['stars']
             user = request.user
+<<<<<<< HEAD
+=======
+            # user = User.objects.get(id=1)
+>>>>>>> 3afca6c2a2eb7b733f6b361c20c76d681fc4aa85
             try:
                 rating = Rating.objects.get(user=user.id, movie=movie.id)
                 rating.stars = stars
@@ -52,4 +56,18 @@ class RatingViewSet(viewsets.ModelViewSet):
 
     def create(self, request, *args, **kwargs):
         response = {'message': 'You cant create rating like that'}
+<<<<<<< HEAD
         return Response(response, status=status.HTTP_400_BAD_REQUEST)
+=======
+        return Response(response, status=status.HTTP_400_BAD_REQUEST)
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3afca6c2a2eb7b733f6b361c20c76d681fc4aa85

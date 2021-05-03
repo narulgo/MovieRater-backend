@@ -28,4 +28,27 @@ class Rating(models.Model):
     
     class Meta:
         unique_together = (('user', 'movie'),)
+<<<<<<< HEAD
         index_together = (('user', 'movie'),)
+=======
+        index_together = (('user', 'movie'),)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3afca6c2a2eb7b733f6b361c20c76d681fc4aa85
